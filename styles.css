@@ -26,8 +26,58 @@ a {
   text-decoration: none;
   color: #e65c00;
 }
+/* ====== MOBILE / TABLET RESPONSIVE ====== */
+@media (max-width: 768px) {
+/* Containers */
+.container {
+width: 95%;
+}
 
-/* ====== UTILITIES ====== */
+/* Hero Section */
+.hero-video__overlay h1 {
+font-size: 2rem;
+}
+.hero-video__overlay h4 {
+font-size: 1rem;
+}
+.hero-video__overlay p {
+font-size: 0.9rem;
+}
+
+/* Service Cards */
+.service-grid {
+grid-template-columns: 1fr; /* stack cards vertically */
+gap: 1rem;
+}
+
+/* Gallery */
+.gallery-grid {
+grid-template-columns: 1fr; /* stack images vertically */
+gap: 1rem;
+}
+
+/* Reviews */
+.review-container {
+flex-direction: column; /* stack reviews */
+gap: 20px;
+}
+
+/* Review photos */
+.review-photo {
+height: auto;
+}
+
+/* Footer */
+.footer-container {
+flex-direction: column;
+align-items: center;
+}
+
+/* Forms */
+.review-form, .contact form {
+width: 100%;
+padding: 20px;
+}/* ====== UTILITIES ====== */
 .container {
   width: 90%;
   max-width: 1200px;
